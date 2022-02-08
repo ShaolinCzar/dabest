@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NAMBAWAN TRAVEL GROUP</title>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+    <div class="side_nav">
+        <div class="menu_but" onclick="menu()">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <span id="menu_span">МЕНЮ</span>
+        </div>
+        <button class="vk"><i class="fab fa-vk"></i>VKONTAKTE</button>
+        <button class="inst"><i class="fab fa-instagram"></i>INSTAGRAM</button>
+    </div>
+    <div class="nav_menu animated none">
+        <button id="menu_start" onclick="menu_start()"><i class="fas fa-flag-checkered fa-lg"></i>СТАРТОВАЯ СТРАНИЦА<i class="fas fa-flag-checkered fa-lg"></i></button>
+        <button id="menu_about" onclick="menu_about()"><i class="fas fa-users fa-lg"></i>О НАС<i class="fas fa-users fa-lg"></i></button>
+        <button id="menu_hiw" onclick="menu_hiw()"><i class="fas fa-smile-beam fa-lg"></i>КАК ЭТО БЫЛО<i class="fas fa-smile-beam fa-lg"></i></button>
+        <button id="menu_callback" onclick="show_hider()"><i class="fas fa-comments-dollar fa-lg"></i>ОСТАВИТЬ ЗАЯВКУ<i class="fas fa-comments-dollar fa-lg"></i></button>
+    </div>
+    <div class="prime_slide animated">
+        <div class="logo">NAMBAWAN<br>TRAVEL <i class="fas fa-space-shuttle"></i></div>
+        <div class="number">+375 29 987 65 43</div>
+        <button class="call_order" onclick="show_hider()">Обратный звонок</button>
+        <div class="description"><span>Мы в Nambawan Travel</span><br><span>Организуем корпоративное путешествие для Ваших сотрудников и клиентов</span></div>
+        <div class="we_do">
+            <div>Повышаем лояльность сотрудников</div>
+            <div>Увеличиваем мотивацию сотрудников</div>
+            <div>Улучшаем имидж<br>компании</div>
+            <div></div>
+        </div>
+        <button class="proof"><i class="fas fa-long-arrow-alt-down fa-2x"></i>Мы в этом шарим!</button>
+    </div>
+    <div class="second_slide animated none">
+        <div class="video"><i class="far fa-play-circle fa-5x"></i></div>
+        <div class="second_description">
+            <div class="with_us">ТОЛЬКО С НАМИ ВЫ СМОЖЕТЕ ЗНАТНО УГАРЕТЬ!</div>
+            <div class="video_check">Гляньте наше чумовое видео, если не верите.
+                 Если хотите, и вам такое же по итогу снимем - будет что вспомнить.
+            </div>
+            <div class="about_us">
+                <div><i class="fas fa-globe-europe fa-4x"></i>Работаем в любой точке планеты</div>
+                <div><i class="fas fa-user-astronaut fa-4x"></i>Если на Земле всё видели, то no problem...</div>
+            </div>   
+        </div>
+    </div>
+    <div class="third_slide animated none">
+        <div class="ts_head">КАК ЭТО БЫЛО</div>
+        <div class="slider1">
+            <div class="slider1_img">
+                <div class="first_next_slide">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="first_prev_slide">
+                    <i class="fas fa-chevron-right"></i>
+                </div>        
+                <div class="sl1_img1 animated active">
+                    <div class="image_description">Покорили ледяные вершины <br>с командой <span>HBO</span></div>
+                    <div class="slide_description">Восхождение 1</div>
+                    <div class="slide_number">01 / 04</div>
+                </div>
+                <div class="sl1_img2 animated none">
+                    <div class="image_description">Покорили ледяные вершины <br>с командой <span>HBO</span></div>
+                    <div class="slide_description">Восхождение 2</div>
+                    <div class="slide_number">02 / 04</div>
+                </div>
+                <div class="sl1_img3 animated none">
+                    <div class="image_description">Покорили ледяные вершины <br>с командой <span>HBO</span></div>
+                    <div class="slide_description">Восхождение 3</div>
+                    <div class="slide_number">03 / 04</div>
+                </div>
+                <div class="sl1_img4 animated none">
+                    <div class="image_description">Покорили ледяные вершины <br>с командой <span>HBO</span></div>
+                    <div class="slide_description">Восхождение 4</div>
+                    <div class="slide_number">04 / 04</div>
+                </div>
+            </div>
+        </div>
+        <div class="slider2">
+            <div class="slider2_img">
+                    <div class="second_next_slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="second_prev_slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </div> 
+                <div class="sl2_img1 animated active">
+                        <div class="image_description">Поплавали за рыбками <br>с <span>National Geographic</span></div>
+                        <div class="slide_description">Погружение 1</div>
+                        <div class="slide_number">01 / 04</div>
+                </div>
+                <div class="sl2_img2 animated none">
+                        <div class="image_description">Поплавали за рыбками <br>с <span>National Geographic</span></div>
+                        <div class="slide_description">Погружение 2</div>
+                        <div class="slide_number">02 / 04</div>
+                </div>
+                <div class="sl2_img3 animated none">
+                        <div class="image_description">Поплавали за рыбками <br>с <span>National Geographic</span></div>
+                        <div class="slide_description">Погружение 3</div>
+                        <div class="slide_number">03 / 04</div>
+                </div>
+                <div class="sl2_img4 animated none">
+                        <div class="image_description">Поплавали за рыбками <br>с <span>National Geographic</span></div>
+                        <div class="slide_description">Погружение 4</div>
+                        <div class="slide_number">04 / 04</div>
+                </div>
+            </div>
+        </div>
+        <div class="sl_des1">Находим <p>сильные стороны</p> вашей команды!</div>
+        <div class="sl_des2">Создаём самую настоящую <br><p>dream-team!</p></div>
+    </div>
+    <div class="hider none">
+        <div class="callback_form">
+            <i id="hider_of_the_hider" class="fas fa-times fa-lg"></i>
+            <div class="cb_header">ВЫ УЖЕ НА ПОЛПУТИ К МЕЧТЕ!<br>ОСТАЛАСЬ САМАЯ МАЛОСТЬ!</div>
+            <form id="cb_form">
+                <input type="text" placeholder="Самое крутое имя" name="name" required>
+                <input type="email" placeholder="Самый козырный E-mail" name="email" required>
+                <input type="submit" value="ОТПРАВЛЯЕМСЯ!">
+            </form>
+        </div>
+    </div>
+    <div class="additional_navigation">
+        <span class="ns1 active_span" onclick="menu_start()"></span>
+        <span class="ns2" onclick="menu_about()"></span>
+        <span class="ns3" onclick="menu_hiw()"></span>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
